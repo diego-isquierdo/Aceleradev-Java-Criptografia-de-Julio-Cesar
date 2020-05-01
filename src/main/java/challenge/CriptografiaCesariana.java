@@ -37,6 +37,6 @@ public class CriptografiaCesariana implements Criptografia {
 
     static void validaTexto(String texto) {
         if(texto==null)throw new NullPointerException("Conteúdo Null");
-        if(texto.isEmpty()) throw new IllegalArgumentException("Conteúdo Vazio");
+        if(texto.trim().isEmpty()) throw new IllegalArgumentException("Conteúdo Vazio");
     }
 }
